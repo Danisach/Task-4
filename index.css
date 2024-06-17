@@ -1,0 +1,485 @@
+body{
+    background-color: rgb(31, 12, 31);
+    overflow-x: hidden;
+}
+#navbar{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    margin: auto;
+    height: 60px;
+    position: fixed;
+    top: 0; 
+    z-index: 200;
+    background-color: rgb(31, 12, 31);
+    padding-bottom: 12px;
+    padding-top: 6px;
+}
+#navbar>div{
+    height: 100%;
+    padding-top: 11px;
+}
+#navbarImg img{
+    height: 100%;
+    position: relative;
+    bottom: 1.5px;
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 7.6px;
+    width: 40%;
+}
+#searchBox{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.searchBox {
+    border: 1px solid hsla(0,0%,51%,.6);
+    border-radius: 6px;
+    height: 30px;
+    margin: 5px 16px 1px 56px;
+    padding: 0 44px;
+    position: relative;
+    z-index: 10;
+    width: 200px;
+}
+.searchWrapper .searchBox .searchInputBox {
+    bottom: 0;
+    height: 20px;
+    left: 40px;
+    margin: auto;
+    position: absolute;
+    right: 44px;
+    top: 0
+}
+/* .searchIcon {
+    bottom: 0;
+    font-size: 2.2rem;
+    height: 18px;
+    left: 12px;
+    line-height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+} */
+.searchWrapper .searchBox .searchInputBox input {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-family: NotoSansRegular,sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    height: 20px;
+    line-height: 1.4285714286em;
+    outline: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.search-container>form>input{
+    height: 30px;
+}
+.search-container>form>button{
+    height: 35px;
+}
+.search-container>form>input{
+    width: 350px;
+}
+.search-container>form>button{
+    width: 40px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: NotoSansRegular,sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+    padding: 0;
+}
+#lastTab{
+    width: 5%;
+    margin-right: 80px;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+      
+}
+.hb{
+  
+    position: relative;
+    right: 100px;
+    top: 15px;
+
+}
+.fa{
+    color: white;
+    font-size: 21px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+#search{
+    background-color: transparent;
+}
+.search-container>form{
+    background-color:black;
+    color: white;
+}
+#slider{
+    margin-top: 80px;
+    margin-left: 87px;
+}
+#innerBtns{
+    position: relative;
+    bottom: 95px;
+    left: 30px;padding: 0px;
+}
+#innerBtns>button{
+    height: 40px;
+    border-radius: 8px;
+    
+}
+
+#innerBtns>button>h4{
+    position: relative;
+    bottom: 7px;
+}
+    
+#sliderTop{
+    position: relative;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+#Image{
+    width: 85vw;
+    height: 450px;
+    cursor: pointer;
+}
+#Image:hover{
+    opacity: 0.9;
+}
+#sliderTop>h1{
+    position:absolute;
+    bottom: 100px;
+    left:33px;
+    color: white;
+    cursor: pointer;
+    font-family: NotoSansRegular,sans-serif;
+}
+#prev{
+    position: absolute;
+    left: 50px;
+    top: 290px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#next{
+    position: absolute;
+    right: 50px;
+    top: 290px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.videoContainer{
+    display: flex;
+    overflow-x: auto;
+    padding: 0 3vw;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+.videoCard{
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.playButton{
+    position: absolute;
+    left: 19.5%;
+    top: 46%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(135, 182, 235);
+    font-size: medium;
+    font-weight: bolder;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: NotoSansRegular,sans-serif; 
+    width: 120px;
+    height: 50px;
+    border-radius: 150px 150px 150px 150px;
+}
+.playButton{
+    visibility: hidden;
+}
+.playButton:hover span{
+    display: none;
+}
+.playButton:hover::before{
+    content: "Let's go!";
+}
+.playButton:hover{
+    background-color: rgb(0, 128, 21);
+    transition: all ease 0.2s;
+}
+.playButton1{
+    position: absolute;
+    left: 22%;
+    top: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(135, 182, 235);
+    font-size: medium;
+    font-weight: bolder;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: NotoSansRegular,sans-serif; 
+    width: 120px;
+    height: 50px;
+    border-radius: 150px 150px 150px 150px;
+}
+.playButton1{
+    visibility: hidden;
+}
+.playButton1:hover span{
+    display: none;
+}
+.playButton1:hover::before{
+    content: "Let's go!";
+}
+.playButton1:hover{
+    background-color: rgb(0, 128, 21);
+    transition: all ease 0.2s;
+}
+.videoCard:hover .playButton1{
+    visibility: visible;
+}
+.playButton2{
+    position: absolute;
+    left: 32.6%;
+    top: 31%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(135, 182, 235);
+    font-size: medium;
+    font-weight: bolder;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: NotoSansRegular,sans-serif; 
+    width: 120px;
+    height: 50px;
+    border-radius: 150px 150px 150px 150px;
+}
+.playButton2{
+    visibility: hidden;
+}
+.playButton2:hover span{
+    display: none;
+}
+.playButton2:hover::before{
+    content: "Let's go!";
+}
+.playButton2:hover{
+    background-color: rgb(0, 128, 21);
+    transition: all ease 0.2s;
+}
+.videoCard:hover .playButton2{
+    visibility: visible;
+}
+.videoCard h3{
+    color: white; 
+    font-family: NotoSansRegular,sans-serif; 
+    font-weight: lighter;
+    position: relative;
+    bottom: 8px;
+}
+.videoCard:hover img{
+    opacity: 0.5;
+}
+.videoCard:hover .playButton{
+    visibility: visible;
+}
+.videoCard>img{
+    border-radius: 8px;
+    display: block;
+}
+#backNone{
+    color: white;
+    background-color: #4d4d4d;
+    border: white;
+    margin-right: 3px;
+}
+#backNone:hover{
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+#backPurple{
+    background-color: rgb(100, 15, 100);
+    color: white;
+    border: none;
+    width: 100px;
+}
+#backPurple:hover{
+    background-color: purple;
+    cursor: pointer;
+}
+
+.videoCategory{
+    margin-left: 42px;
+    margin-top: -5px;
+    color: white;
+    font-family: NotoSansMedium,sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.videos{
+    position: relative;
+    margin-bottom: 45px;
+}
+.preBtn{
+    position: absolute;
+    z-index: 100;
+    left: 15px;
+    top: 54%;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.nxtBtn{
+    position: absolute;
+    z-index: 100;
+    right: 15px;
+    top: 54%;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+#videoContainer_circle>div{
+    border-radius: 50%;
+}
+#videoContainer_circle>div>img{
+    border-radius: 50%;
+}
+/* Footer */
+
+hr{
+    margin-top: 50px;
+    size: "20";
+}
+#footerTop{
+    display: flex;
+    width: 88vw;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 26px;
+    margin-left: 86.5px;
+}
+#ftL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ftL>div{
+    margin-right: 20px;
+}
+#ftL h3{
+    margin-bottom: 27px;
+    color: white;
+}
+#ftR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ftR>div{
+    margin-right: 20px;
+}
+#ftR h3{
+    margin-bottom: 37px;
+    color: white;
+}
+.fa-brands{
+    font-size: 30px;
+    position: relative;
+    bottom: 9.5px;
+    color: white;
+}
+#ft2{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    margin-left: 85px;
+    color: rgb(199, 186, 186);
+    font-family: NotoSansRegular,sans-serif;
+}
+#fbody{
+    display: flex;
+    margin-left: 45.5px;
+    margin-top: 15px;
+    color: rgb(199, 186, 186);
+    font-weight: lighter;
+}
+#fbody>div{
+    margin-right: 17px;
+    height: 100%;
+}
+#fbody ul{
+    list-style: none;
+    line-height: 29px;
+    font-family: NotoSansRegular,sans-serif;
+    font-size: .8rem;
+}
+#fbott{
+    margin-left: 85.5px;
+    line-height: 90px;
+    margin-top: 35px;
+    color: rgb(170, 143, 143);
+    font: .7rem sans-serif;
+}
+.makeBold{
+    font-weight: bolder;
+    color: white;
+}
+@media  (max-width:768px) {
+    #lastTab{
+          display: none;
+    }
+   
+}
+@media (width:768px) and (width:380px) {
+    .hb{
+        left: 10px;
+    }
+}
